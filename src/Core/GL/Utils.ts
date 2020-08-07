@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-mutable-exports
-export let gl: WebGLRenderingContext;
+export let gl: WebGLRenderingContext | null;
 
 export class GLUtilities {
   public static initialize( canvas: HTMLCanvasElement ): HTMLCanvasElement {
