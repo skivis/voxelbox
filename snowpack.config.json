@@ -1,6 +1,6 @@
 {
   "mount": {
-    "www": "/",
+    "public": "/",
     "src": "/_dist_"
   },
   "plugins": [
