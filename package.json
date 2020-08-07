@@ -1,4 +1,9 @@
 {
+  "name": "voxelbox",
+  "version": "1.0.0",
+  "description": "An attempt at a Minecraft-ish game using WebGL.",
+  "author": "skivis",
+  "license": "MIT",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
