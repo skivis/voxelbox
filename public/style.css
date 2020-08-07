@@ -1,0 +1,46 @@
+@font-face {
+  font-family: minecraftia;
+  src: url('fonts/minecraftia.ttf');
+}
+
+html, body, canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: minecraftia;
+  text-shadow: #3f3f3f 2px 2px 0px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  user-select: none;
+}
+
+#img {
+  display: block;
+  margin: auto;
+  height: 128px;
+  width: 128px;
+  padding: 2rem;
+}
+
+.terminal {
+  width: 512px;
+  height: 100%;
+  right: -490px;
+  top: 0;
+  position: fixed;
+  margin: 0 0 0 0;
+  resize: none;
+  transition-duration: 0.5s;
+}
+
+.terminal:hover {
+  transition-duration: 0.5s;
+  right: 0;
+}
