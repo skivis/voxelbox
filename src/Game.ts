@@ -1,10 +1,8 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable class-methods-use-this */
 import type { IGame } from './Core/IGame';
 import type { Camera } from './Core/Camera';
 
 export class Game implements IGame {
-  private camera: Camera;
+  private readonly camera: Camera;
 
   public constructor( camera: Camera ) {
     this.camera = camera;
@@ -13,14 +11,11 @@ export class Game implements IGame {
   public start( aspect: number ): void {
     this.camera.setPitch( aspect );
 
-    console.log( 'Starting game.' );
+    console.log( 'Game started.' );
   }
 
+  // eslint-disable-next-line class-methods-use-this
   public update(): void {
-    // console.log( 'Updating game.' );
-  }
-
-  public stop(): void {
-    console.log( 'Stopping game.' );
+    console.log( 'Game state updated.' );
   }
 }
