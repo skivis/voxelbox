@@ -1,6 +1,6 @@
 # Voxelbox
 
-> An atempt at a Minecraft-ish game with WebGL.
+> An attempt at a Minecraft-ish game using WebGL.
 
 ## Local development
 
