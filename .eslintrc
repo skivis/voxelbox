@@ -1,0 +1,56 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "prettier"
+    ],
+    "extends": [
+      "airbnb-base",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:import/typescript",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/eslint-recommended"
+    ],
+    "ignorePatterns": ["./dist/*"],
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "rules": {
+      "quotes": [2, "single", { "avoidEscape": true }],
+      "arrow-parens":"off",
+      "no-bitwise": "off",
+      "no-underscore-dangle": "off",
+      "no-plusplus": "off",
+      "no-console": "off",
+      "no-useless-constructor": "off",
+      "space-in-parens": ["error", "always"],
+      "indent": [2, 2, { "SwitchCase": 1 }],
+      "import/no-unresolved": [2, { "commonjs": true, "amd": true }],
+      "import/prefer-default-export": "off",
+      "max-len": [
+        "error",
+        {
+          "code": 150,
+          "ignoreComments": true,
+          "ignoreTrailingComments": true,
+          "ignoreUrls": true,
+          "ignoreStrings": true,
+          "ignoreTemplateLiterals": true
+        }
+      ],
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "js": "never",
+          "jsx": "never",
+          "ts": "never",
+          "tsx": "never"
+        }
+      ]
+    }
+  }
